@@ -1,0 +1,348 @@
+base: 6
+maxval: 3
+
+use_empirical_prior: true
+
+palette:
+    - gold
+    - gray90
+    - forestgreen
+
+factors:
+    - name: Agriculture
+      abbr: AGR
+      thresh: [0.0,0.20,0.40,0.60,0.80,1.00]
+    - name: Climate_Disasters
+      abbr: CLIM_DIS
+      thresh: [0.0,0.20,0.40,0.60,0.80,1.00]
+    - name: Conservation and Ecosystems
+      abbr: CONS_ECO
+      thresh: [0.0,0.20,0.40,0.60,0.80,1.00]
+    - name: Crime_Conflict_Violence
+      abbr: CRIME
+      thresh: [0.0,0.20,0.40,0.60,0.80,1.00]
+    - name: Economic conditions
+      abbr: ECON_COND
+      thresh: [0.0,0.20,0.40,0.60,0.80,1.00]
+    - name: Education
+      abbr: EDUC
+      thresh: [0.0,0.20,0.40,0.60,0.80,1.00]
+    - name: Employment
+      abbr: EMPL
+      thresh: [0.0,0.20,0.40,0.60,0.80,1.00]
+    - name: Energy_Natural Resources
+      abbr: ENERGY_NR
+      thresh: [0.0,0.20,0.40,0.60,0.80,1.00]
+    - name: Financial Resources
+      abbr: FIN_RES
+      thresh: [0.0,0.20,0.40,0.60,0.80,1.00]
+    - name: Fishing
+      abbr: FISH
+      thresh: [0.0,0.20,0.40,0.60,0.80,1.00]
+    - name: Food
+      abbr: FOOD
+      thresh: [0.0,0.20,0.40,0.60,0.80,1.00]
+    - name: Gender Parity
+      abbr: GENDER
+      thresh: [0.0,0.20,0.40,0.60,0.80,1.00]
+    - name: Government
+      abbr: GOV
+      thresh: [0.0,0.20,0.40,0.60,0.80,1.00]
+    - name: Health
+      abbr: HEALTH
+      thresh: [0.0,0.20,0.40,0.60,0.80,1.00]
+    - name: Industry
+      abbr: INDUS
+      thresh: [0.0,0.20,0.40,0.60,0.80,1.00]
+    - name: Inequality
+      abbr: INEQ
+      thresh: [0.0,0.20,0.40,0.60,0.80,1.00]
+    - name: International Relations
+      abbr: INT_REL
+      thresh: [0.0,0.20,0.40,0.60,0.80,1.00]
+    - name: Land Ownership_Use
+      abbr: LAND
+      thresh: [0.0,0.20,0.40,0.60,0.80,1.00]
+    - name: Marine
+      abbr: MARINE
+      thresh: [0.0,0.20,0.40,0.60,0.80,1.00]
+    - name: Misc
+      abbr: MISC
+      thresh: [0.0,0.20,0.40,0.60,0.80,1.00]
+    - name: Pollution
+      abbr: POLL
+      thresh: [0.0,0.20,0.40,0.60,0.80,1.00]
+    - name: Social Policy_Context
+      abbr: SOC_POL
+      thresh: [0.0,0.20,0.40,0.60,0.80,1.00]
+    - name: Sustainability
+      abbr: SUST
+      thresh: [0.0,0.20,0.40,0.60,0.80,1.00]
+    - name: Technology
+      abbr: TECH
+      thresh: [0.0,0.20,0.40,0.60,0.80,1.00]
+    - name: Tourism
+      abbr: TOUR
+      thresh: [0.0,0.20,0.40,0.60,0.80,1.00]
+    - name: Urbanization
+      abbr: URB
+      thresh: [0.0,0.20,0.40,0.60,0.80,1.00]
+    - name: WASH
+      abbr: WASH
+      thresh: [0.0,0.20,0.40,0.60,0.80,1.00]
+    - name: Waste management
+      abbr: WASTE
+      thresh: [0.0,0.20,0.40,0.60,0.80,1.00]
+    - name: Water resources
+      abbr: WATER
+      thresh: [0.0,0.20,0.40,0.60,0.80,1.00]
+
+countries:
+    - ABW
+    - AFG
+    - AGO
+    - AIA
+    - ALA
+    - ALB
+    - AND
+    - ARE
+    - ARG
+    - ARM
+    - ASM
+    - ATA
+    - ATF
+    - ATG
+    - AUS
+    - AUT
+    - AZE
+    - BDI
+    - BEL
+    - BEN
+    - BES
+    - BFA
+    - BGD
+    - BGR
+    - BHR
+    - BHS
+    - BIH
+    - BLM
+    - BLR
+    - BLZ
+    - BMU
+    - BOL
+    - BRA
+    - BRB
+    - BRN
+    - BTN
+    - BVT
+    - BWA
+    - CAF
+    - CAN
+    - CCK
+    - CHE
+    - CHL
+    - CHN
+    - CIV
+    - CMR
+    - COD
+    - COG
+    - COK
+    - COL
+    - COM
+    - CPV
+    - CRI
+    - CUB
+    - CUW
+    - CXR
+    - CYM
+    - CYP
+    - CZE
+    - DEU
+    - DJI
+    - DMA
+    - DNK
+    - DOM
+    - DZA
+    - ECU
+    - EGY
+    - ERI
+    - ESH
+    - ESP
+    - EST
+    - ETH
+    - FIN
+    - FJI
+    - FLK
+    - FRA
+    - FRO
+    - FSM
+    - GAB
+    - GBR
+    - GEO
+    - GGY
+    - GHA
+    - GIB
+    - GIN
+    - GLP
+    - GMB
+    - GNB
+    - GNQ
+    - GRC
+    - GRD
+    - GRL
+    - GTM
+    - GUF
+    - GUM
+    - GUY
+    - HKG
+    - HMD
+    - HND
+    - HRV
+    - HTI
+    - HUN
+    - IDN
+    - IMN
+    - IND
+    - IOT
+    - IRL
+    - IRN
+    - IRQ
+    - ISL
+    - ISR
+    - ITA
+    - JAM
+    - JEY
+    - JOR
+    - JPN
+    - KAZ
+    - KEN
+    - KGZ
+    - KHM
+    - KIR
+    - KNA
+    - KOR
+    - KWT
+    - LAO
+    - LBN
+    - LBR
+    - LBY
+    - LCA
+    - LIE
+    - LKA
+    - LSO
+    - LTU
+    - LUX
+    - LVA
+    - MAC
+    - MAF
+    - MAR
+    - MCO
+    - MDA
+    - MDG
+    - MDV
+    - MEX
+    - MHL
+    - MKD
+    - MLI
+    - MLT
+    - MMR
+    - MNE
+    - MNG
+    - MNP
+    - MOZ
+    - MRT
+    - MSR
+    - MTQ
+    - MUS
+    - MWI
+    - MYS
+    - MYT
+    - NAM
+    - NCL
+    - NER
+    - NFK
+    - NGA
+    - NIC
+    - NIU
+    - NLD
+    - NOR
+    - NPL
+    - NRU
+    - NZL
+    - OMN
+    - PAK
+    - PAN
+    - PCN
+    - PER
+    - PHL
+    - PLW
+    - PNG
+    - POL
+    - PRI
+    - PRK
+    - PRT
+    - PRY
+    - PSE
+    - PYF
+    - QAT
+    - REU
+    - ROU
+    - RUS
+    - RWA
+    - SAU
+    - SDN
+    - SEN
+    - SGP
+    - SGS
+    - SHN
+    - SJM
+    - SLB
+    - SLE
+    - SLV
+    - SMR
+    - SOM
+    - SPM
+    - SRB
+    - SSD
+    - STP
+    - SUR
+    - SVK
+    - SVN
+    - SWE
+    - SWZ
+    - SXM
+    - SYC
+    - SYR
+    - TCA
+    - TCD
+    - TGO
+    - THA
+    - TJK
+    - TKL
+    - TKM
+    - TLS
+    - TON
+    - TTO
+    - TUN
+    - TUR
+    - TUV
+    - TZA
+    - UGA
+    - UKR
+    - UMI
+    - URY
+    - USA
+    - UZB
+    - VAT
+    - VCT
+    - VEN
+    - VGB
+    - VIR
+    - VNM
+    - VUT
+    - WLF
+    - WSM
+    - YEM
+    - ZAF
+    - ZMB
+    - ZWE
