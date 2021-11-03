@@ -39,4 +39,5 @@ vignettes/*.pdf
 .Renviron
 
 # Output files from the script
-outputs/*
+outputs/*.csv
+outputs/*.png
