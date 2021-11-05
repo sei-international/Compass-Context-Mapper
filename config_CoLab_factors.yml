@@ -7,37 +7,147 @@ palette:
     - forestgreen
 
 factors:
-    - name: MF_Agric_Share
-      abbr: NR_AG
-      thresh: [0.0,0.20,0.40,0.60,0.80,1.00]
-    - name: MF_Corruption
-      abbr: GV_COR
-      thresh: [0.0,0.20,0.40,0.60,0.80,1.00]
-    - name: MF_Fisheries_Prod
-      abbr: NR_FISH
-      thresh: [0.0,0.20,0.40,0.60,0.80,1.00]
-    - name: MF_Forest_Share
-      abbr: NR_FOR
-      thresh: [0.0,0.20,0.40,0.60,0.80,1.00]
-    - name: MF_Freshwater_res
-      abbr: NR_H2O
-      thresh: [0.0,0.20,0.40,0.60,0.80,1.00]
-    - name: MF_GNI-PPP
-      abbr: GNI
-      thresh: [0.0,0.20,0.40,0.60,0.80,1.00]
-    - name: MF_Nat_Res_Rent
-      abbr: NR_RENT
-      thresh: [0.0,0.20,0.40,0.60,0.80,1.00]
-    - name: MF_Social_Protection
-      abbr: SOC
-      thresh: [0.0,0.20,0.40,0.60,0.80,1.00]
-    - name: MF_Stability
-      abbr: GV_STAB
-      thresh: [0.0,0.20,0.40,0.60,0.80,1.00]
-    - name: MF_Voice
-      abbr: GV_VOICE
-      thresh: [0.0,0.20,0.40,0.60,0.80,1.00]
-      
+    - name: CL_AgriculturalLand
+      abbr: CL_AG_LAND
+      thresh:
+      - 0.0
+      - 0.25
+      - 0.75
+      - 1.0
+    - name: CL_EnvironmentalHealth
+      abbr: CL_ENV_HLTH
+      thresh:
+      - 0.0
+      - 0.25
+      - 0.75
+      - 1.0
+    - name: CL_Forests
+      abbr: CL_FOR
+      thresh:
+      - 0.0
+      - 0.25
+      - 0.75
+      - 1.0
+    - name: CL_FossilFuelMinerals
+      abbr: CL_FOS_MIN
+      thresh:
+      - 0.0
+      - 0.25
+      - 0.75
+      - 1.0
+    - name: CL_FreshWater
+      abbr: CL_H2O
+      thresh:
+      - 0.0
+      - 0.25
+      - 0.75
+      - 1.0
+    - name: CL_GenderInequality
+      abbr: CL_GENDER
+      thresh:
+      - 0.0
+      - 0.25
+      - 0.75
+      - 1.0
+    - name: CL_GiniCoefficient
+      abbr: CL_GINI
+      thresh:
+      - 0.0
+      - 0.25
+      - 0.75
+      - 1.0
+    - name: CL_Governance
+      abbr: CL_GOV
+      thresh:
+      - 0.0
+      - 0.25
+      - 0.75
+      - 1.0
+    - name: CL_GrossNationalIncomePPP
+      abbr: CL_GNI
+      thresh:
+      - 0.0
+      - 0.25
+      - 0.75
+      - 1.0
+    - name: CL_MaterialFootprint
+      abbr: CL_MAT_FOOT
+      thresh:
+      - 0.0
+      - 0.25
+      - 0.75
+      - 1.0
+    - name: CL_ParticipationGlobalEconInstitutions
+      abbr: CL_ECON_PART
+      thresh:
+      - 0.0
+      - 0.25
+      - 0.75
+      - 1.0
+    - name: CL_R_Dspending
+      abbr: CL_RnD
+      thresh:
+      - 0.0
+      - 0.25
+      - 0.75
+      - 1.0
+    - name: CL_SocialProtection
+      abbr: CL_SOC_PROT
+      thresh:
+      - 0.0
+      - 0.25
+      - 0.75
+      - 1.0
+    - name: CL_TransportationDomesticLogisticsPerfIndex
+      abbr: CL_TRANSP
+      thresh:
+      - 0.0
+      - 0.50
+      - 0.75
+      - 1.0
+    - name: CL_UrbanPopulation
+      abbr: CL_URB
+      thresh:
+      - 0.0
+      - 0.25
+      - 0.75
+      - 1.0
+    - name: CL_Education
+      abbr: CL_EDUC
+      thresh:
+      - 0.0
+      - 0.25
+      - 0.75
+      - 1.0
+    - name: CL_EnergyAccess
+      abbr: CL_ENER
+      thresh:
+      - 0.0
+      - 0.25
+      - 0.75
+      - 1.0
+    - name: CL_ICT
+      abbr: CL_ICT
+      thresh:
+      - 0.0
+      - 0.25
+      - 0.75
+      - 1.0
+    - name: CL_MarineCoastal
+      abbr: CL_MARINE
+      thresh:
+      - 0.0
+      - 0.25
+      - 0.75
+      - 1.0
+    - name: CL_WaterSanitation
+      abbr: CL_WATSAN
+      thresh:
+      - 0.0
+      - 0.25
+      - 0.75
+      - 1.0
+          
 countries:
     - ABW
     - AFG

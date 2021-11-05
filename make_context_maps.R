@@ -4,13 +4,7 @@ global.prior <- read.csv("outputs/global_context_map.csv", header = T, row.names
 
 # Run from here downward for different countries
 for (ctry.code in countries) {
-  context.map <- global.prior
-  
-  if (use_empirical_prior) {
-    context.map <- global.prior
-  } else {
-    context.map <- 0 * global.prior 
-  }
+  context.map <- 0 * global.prior # Want that size, with NAs, but equal to zero otherwise
   
   lvls <- ctry.lvls[ctry.lvls$iso3 == ctry.code,][3:ncol(ctry.lvls)]
   n <- ncol(ctry.lvls) - 2
@@ -36,17 +30,6 @@ for (ctry.code in countries) {
     dev.off()
     write.csv(context.map, paste0("outputs/context_map_", ctry.code, ".csv"))
 
-    # Difference from global prior
-    png(paste0("outputs/context_map_", ctry.code, "_diff.png"), width = 780, height = 780)
-    heatmap.2(as.matrix(context.map - global.prior), na.rm = F, Rowv = NA, Colv = NA, scale = "none",
-              breaks = seq(-3, 3, length.out=101), dendrogram = "none",
-              density.info = "none", trace = "none", key = F, offsetRow = -55,
-              lhei=c(1,5), lwid=c(1,5), margins = c(5,5),
-              main = paste(ctry.code, "(difference)"),
-              col = palette)
-    dev.off()
-    write.csv(context.map - global.prior, paste0("outputs/context_map_", ctry.code, "_diff.csv"))
-    
   } else {
     print(paste("Skipping", ctry.code))
   }

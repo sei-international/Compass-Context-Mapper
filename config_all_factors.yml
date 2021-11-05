@@ -1,8 +1,6 @@
 base: 6
 maxval: 3
 
-use_empirical_prior: true
-
 palette:
     - gold
     - gray90

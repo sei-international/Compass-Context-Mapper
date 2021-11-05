@@ -6,7 +6,7 @@ sink("outputs/process.log")
 timestamp()
 
 # Read configuration parameters from the YAML file
-config.dat <- read_yaml("config_all_factors.yml")
+config.dat <- read_yaml("config_CoLab_factors.yml")
 
 base <- config.dat$base
 maxval <- config.dat$maxval
